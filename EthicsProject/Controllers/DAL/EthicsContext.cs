@@ -7,7 +7,7 @@ using EthicsProject.Models;
 
 namespace EthicsProject.Controllers.DAL
 {
-    public class EthicsContext
+    public class EthicsContext : DbContext
     {
         public EthicsContext() : base("EthicsContext")
         {
