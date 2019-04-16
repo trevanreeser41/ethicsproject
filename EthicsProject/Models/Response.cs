@@ -15,5 +15,7 @@ namespace EthicsProject.Models
         public int response_id { get; set; }
         public string response_text { get; set; }
         public DateTime time_submitted { get; set; }
+        public Prompt prompt { get; set; }
+        public Rating rating { get; set; }
     }
 }
