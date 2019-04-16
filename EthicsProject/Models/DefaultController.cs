@@ -9,28 +9,29 @@ namespace EthicsProject.Models
 {
     public class DefaultController : Controller
     {
-        public class homepage_response
+        public class Response
         {
             [Key]
-            public int homepage_response_id { get; set; }
+            public int response_id { get; set; }
             public string response_text { get; set; }
             public DateTime time_submitted { get; set; }
         }
 
-        public class homepage_rating
+        public class Rating
         {
             [Key]
-            public int homepage_rating_id { get; set; }
+            public int rating_id { get; set; }
             public bool ethical { get; set; }
             public bool skillful { get; set; }
-
-            public homepage_response homepage_Response { get; set; }
+            public int MyProperty { get; set; }
+            public LoginViewModel LoginViewModel { get; set; } // User
+            public Response response { get; set; }
         }
 
-        public class homepage_prompt
+        public class Prompt
         {
             [Key]
-            public int homepage_prompt_id { get; set; }
+            public int prompt_id { get; set; }
             public string prompt_text { get; set; }
         }
         
