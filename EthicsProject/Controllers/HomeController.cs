@@ -1,4 +1,4 @@
-﻿using EthicsProject.Controllers.DAL;
+﻿using EthicsProject.DAL;
 using System;
 using System.Collections.Generic;
 using System.Linq;

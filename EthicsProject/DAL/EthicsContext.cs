@@ -5,7 +5,7 @@ using System.Linq;
 using System.Web;
 using EthicsProject.Models;
 
-namespace EthicsProject.Controllers.DAL
+namespace EthicsProject.DAL
 {
     public class EthicsContext : DbContext
     {
