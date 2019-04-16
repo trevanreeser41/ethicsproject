@@ -4,11 +4,13 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EthicsProject.Models
 {
     public class DefaultController : Controller
     {
+        [Table("Response")]
         public class Response
         {
             [Key]
@@ -17,6 +19,7 @@ namespace EthicsProject.Models
             public DateTime time_submitted { get; set; }
         }
 
+        [Table("Rating")]
         public class Rating
         {
             [Key]
@@ -24,10 +27,11 @@ namespace EthicsProject.Models
             public bool ethical { get; set; }
             public bool skillful { get; set; }
             public int MyProperty { get; set; }
-            public LoginViewModel LoginViewModel { get; set; } // User
+            public virtual ApplicationUser User { get; set; } // User
             public Response response { get; set; }
         }
 
+        [Table("Prompt")]
         public class Prompt
         {
             [Key]
