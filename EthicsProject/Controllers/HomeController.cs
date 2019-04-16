@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EthicsProject.Controllers.DAL;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,6 +9,8 @@ namespace EthicsProject.Controllers
 {
     public class HomeController : Controller
     {
+        public EthicsContext db = new EthicsContext();
+
         public ActionResult Index()
         {
             return View();

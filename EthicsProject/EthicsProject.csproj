@@ -282,6 +282,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Controllers\DAL\" />
     <Folder Include="Views\Default\" />
   </ItemGroup>
   <ItemGroup>
